@@ -1,0 +1,216 @@
+2020-05-26 17:39:41,982 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@placeholder="手机号"]')--成功
+2020-05-26 17:39:42,048 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@placeholder="密码"]')--成功
+2020-05-26 17:39:42,108 -- [base_page.py-->line:153] - INFO: 元素--('xpath', "//button[text()='登录']")--点击成功
+2020-05-26 17:40:27,890 -- [base_page.py-->line:153] - INFO: 元素--('xpath', "(//a[text()='抢投标'])[1]")--点击成功
+2020-05-26 17:40:27,973 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:27,997 -- [base_page.py-->line:109] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--获取文本失败
+2020-05-26 17:40:27,998 -- [test_invest.py-->line:52] - INFO: 用例--输入金额非10的整数倍---执行通过
+2020-05-26 17:40:28,049 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:28,064 -- [base_page.py-->line:109] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--获取文本失败
+2020-05-26 17:40:28,064 -- [test_invest.py-->line:52] - INFO: 用例--输入金额为字母---执行通过
+2020-05-26 17:40:28,117 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:28,130 -- [base_page.py-->line:109] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--获取文本失败
+2020-05-26 17:40:28,131 -- [test_invest.py-->line:52] - INFO: 用例--输入金额为特殊字符---执行通过
+2020-05-26 17:40:28,186 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:28,238 -- [base_page.py-->line:153] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--点击成功
+2020-05-26 17:40:43,750 -- [base_page.py-->line:32] - ERROR: 元素--('xpath', '//div[@class="text_center"]')--等待可见超时
+2020-05-26 17:40:43,750 -- [base_page.py-->line:33] - ERROR: Message: 
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 29, in wait_element_visibility
+    EC.visibility_of_element_located(locator))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2020-05-26 17:40:44,060 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\投资_获取弹框错误提示_1590486043.7657394.png
+2020-05-26 17:40:44,147 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:44,175 -- [base_page.py-->line:147] - ERROR: 点击元素--('xpath', '//button[@class="btn btn-special height_style"]')--失败
+2020-05-26 17:40:44,175 -- [base_page.py-->line:148] - ERROR: Message: unknown error: Element <button class="btn btn-special height_style">...</button> is not clickable at point (776, 744). Other element would receive the click: <div class="layui-layer-shade" id="layui-layer-shade1" times="1" style="z-index:19891014; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"></div>
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 144, in click_element
+    self.driver.find_element(*locator).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="btn btn-special height_style">...</button> is not clickable at point (776, 744). Other element would receive the click: <div class="layui-layer-shade" id="layui-layer-shade1" times="1" style="z-index:19891014; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"></div>
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:40:44,489 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\投资_点击投资_1590486044.2168596.png
+2020-05-26 17:40:44,574 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:40:44,621 -- [base_page.py-->line:153] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--点击成功
+2020-05-26 17:41:00,133 -- [base_page.py-->line:32] - ERROR: 元素--('xpath', '//div[@class="text_center"]')--等待可见超时
+2020-05-26 17:41:00,133 -- [base_page.py-->line:33] - ERROR: Message: 
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 29, in wait_element_visibility
+    EC.visibility_of_element_located(locator))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2020-05-26 17:41:00,436 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\投资_获取弹框错误提示_1590486060.1335032.png
+2020-05-26 17:41:00,497 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:41:00,533 -- [base_page.py-->line:153] - INFO: 元素--('xpath', '//button[@class="btn btn-special height_style"]')--点击成功
+2020-05-26 17:41:16,059 -- [base_page.py-->line:32] - ERROR: 元素--('xpath', '//div[@class="text_center"]')--等待可见超时
+2020-05-26 17:41:16,059 -- [base_page.py-->line:33] - ERROR: Message: 
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 29, in wait_element_visibility
+    EC.visibility_of_element_located(locator))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2020-05-26 17:41:16,348 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\投资_获取弹框错误提示_1590486076.0596926.png
+2020-05-26 17:41:16,370 -- [base_page.py-->line:132] - INFO: 获取元素--('xpath', '//input[@data-amount]')--属性成功
+2020-05-26 17:41:16,429 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@data-amount]')--成功
+2020-05-26 17:41:16,455 -- [base_page.py-->line:147] - ERROR: 点击元素--('xpath', '//button[@class="btn btn-special height_style"]')--失败
+2020-05-26 17:41:16,455 -- [base_page.py-->line:148] - ERROR: Message: unknown error: Element <button class="btn btn-special height_style">...</button> is not clickable at point (776, 744). Other element would receive the click: <div class="layui-layer-shade" id="layui-layer-shade3" times="3" style="z-index:19891016; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"></div>
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 144, in click_element
+    self.driver.find_element(*locator).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="btn btn-special height_style">...</button> is not clickable at point (776, 744). Other element would receive the click: <div class="layui-layer-shade" id="layui-layer-shade3" times="3" style="z-index:19891016; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"></div>
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:41:16,725 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\投资_点击投资_1590486076.4556928.png
+2020-05-26 17:41:18,877 -- [test_login.py-->line:13] - INFO: 开始执行登录的用例
+2020-05-26 17:41:25,864 -- [base_page.py-->line:153] - INFO: 元素--('xpath', '//input[@name="remember_me"]')--点击成功
+2020-05-26 17:41:25,951 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@placeholder="手机号"]')--成功
+2020-05-26 17:41:26,017 -- [base_page.py-->line:178] - INFO: 文本内容输入--('xpath', '//input[@placeholder="密码"]')--成功
+2020-05-26 17:41:26,081 -- [base_page.py-->line:153] - INFO: 元素--('xpath', "//button[text()='登录']")--点击成功
+2020-05-26 17:42:02,736 -- [base_page.py-->line:192] - ERROR: 获取元素--('xpath', "//a[contains(text(),'我的账户')]")--失败
+2020-05-26 17:42:02,736 -- [base_page.py-->line:193] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'我的账户')]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 189, in get_element
+    ele = self.driver.find_element(*locator)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'我的账户')]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:42:03,014 -- [base_page.py-->line:212] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\首页_定位我的账户_1590486122.7371063.png
+2020-05-26 17:42:03,025 -- [test_login.py-->line:40] - ERROR: 用例执行失败
+2020-05-26 17:42:03,025 -- [test_login.py-->line:41] - ERROR: assert '登录成功' == '登陆失败'
+  - 登录成功
+  + 登陆失败
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\testcase\test_login.py", line 38, in test_login_pass
+    assert '登录成功' == res
+AssertionError: assert '登录成功' == '登陆失败'
+  - 登录成功
+  + 登陆失败
+2020-05-26 17:42:39,764 -- [base_page.py-->line:168] - ERROR: 输入文本--('xpath', '//input[@placeholder="手机号"]')--失败
+2020-05-26 17:42:39,765 -- [base_page.py-->line:169] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 165, in input_text
+    self.driver.find_element(*locator).send_keys(text_value)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:42:40,045 -- [base_page.py-->line:175] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\登录_账户输入_1590486159.765632.png
+2020-05-26 17:43:16,547 -- [base_page.py-->line:168] - ERROR: 输入文本--('xpath', '//input[@placeholder="手机号"]')--失败
+2020-05-26 17:43:16,547 -- [base_page.py-->line:169] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 165, in input_text
+    self.driver.find_element(*locator).send_keys(text_value)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:43:16,826 -- [base_page.py-->line:175] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\登录_账户输入_1590486196.5481024.png
+2020-05-26 17:43:53,604 -- [base_page.py-->line:168] - ERROR: 输入文本--('xpath', '//input[@placeholder="手机号"]')--失败
+2020-05-26 17:43:53,604 -- [base_page.py-->line:169] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 165, in input_text
+    self.driver.find_element(*locator).send_keys(text_value)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:43:53,882 -- [base_page.py-->line:175] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\登录_账户输入_1590486233.6059175.png
+2020-05-26 17:44:30,347 -- [base_page.py-->line:168] - ERROR: 输入文本--('xpath', '//input[@placeholder="手机号"]')--失败
+2020-05-26 17:44:30,347 -- [base_page.py-->line:169] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 165, in input_text
+    self.driver.find_element(*locator).send_keys(text_value)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:44:30,624 -- [base_page.py-->line:175] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\登录_账户输入_1590486270.3483803.png
+2020-05-26 17:45:07,169 -- [base_page.py-->line:168] - ERROR: 输入文本--('xpath', '//input[@placeholder="手机号"]')--失败
+2020-05-26 17:45:07,169 -- [base_page.py-->line:169] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Auto_web\common\base_page.py", line 165, in input_text
+    self.driver.find_element(*locator).send_keys(text_value)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder="手机号"]"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=71.0.3578.80 (2ac50e7249fbd55e6f517a28131605c9fb9fe897),platform=Windows NT 10.0.19631 x86_64)
+
+2020-05-26 17:45:07,446 -- [base_page.py-->line:175] - INFO: 错误页面截图成功，图表保存的路径:C:\Users\Administrator\Desktop\Auto_web\error_image\登录_账户输入_1590486307.170751.png
+2020-05-26 17:45:09,622 -- [test_login.py-->line:20] - INFO: 登录的用例执行完毕

@@ -14,3 +14,6 @@ REPORT_DIR = os.path.join(BASE_DIR, "reports")
 
 # 日志文件所在的目录路径
 LOG_DIR = os.path.join(BASE_DIR, "log")
+
+# 错误截图的路径
+ERROR_IMG = os.path.join(BASE_DIR, "error_image")
